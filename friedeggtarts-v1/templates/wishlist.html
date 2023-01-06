@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-characters");
+  current.classList.add("active");
+</script>
+
+<script>
+  var pages = parseInt(document.getElementById("javascript-ignore").textContent);
+
+  if (pages == 1) {
+    $(".pagination").css("display", "none")
+  }
+
+  for (let i = 1; i <= pages; i++) {
+    $(document).ready(function() {
+      $("#next-page").before('<li class="page-item"><a class="page-link" href="/wishlist/page/' + i + '">' + i + '</a></li>');
+      $("#bottom-next-page").before('<li class="page-item"><a class="page-link" href="/wishlist/page/' + i + '">' + i + '</a></li>');
+    });
+  }
+
+  var current = parseInt(document.getElementById("javascript-current").textContent);
+
+  console.log(current)
+  
+  $(document).ready(function(){
+    $("#top-pagination li a").eq(current).addClass("active");
+    $("#bottom-pagination li a").eq(current).addClass("active");
+  });
+</script>
+{% endblock script %}
+
+{% block content %}
+
+<p id="javascript-ignore" style="display: none;">
+  {{ paginator.number_pagers }}
+</p>
+
+<p id="javascript-current" style="display: none;">
+  {{ paginator.current_index }}
+</p>
+
+    <div class="card p-3 border-0" style="background: #f6f2ec; border-radius: 30px;">
+      <h1>wishlist</h1>
+      <p>A tracker for all the artists I'd like to someday be able to commission and <a href="/characters">which characters</a> I'd commission them to draw.</p>
+      <h4>tags:</h4>
+      <p><strong>Character:</strong>
+        <span class="badge badge-pill m-1">Rin</span>
+        <span class="badge badge-pill m-1">Elias</span>
+        <span class="badge badge-pill m-1">Cael</span>
+        <span class="badge badge-pill m-1">Ten</span>
+        <span class="badge badge-pill m-1">Jennie</span>
+        <span class="badge badge-pill m-1">Arya</span>
+        <span class="badge badge-pill m-1">Other</span>
+      </p>
+      <p><strong>Ship/Group:</strong>
+        <span class="badge badge-pill m-1">Rilias</span>
+        <span class="badge badge-pill m-1">Adhacael</span>
+        <span class="badge badge-pill m-1">Jenrya</span>
+        <span class="badge badge-pill m-1">Crysthia</span>
+        <span class="badge badge-pill m-1">the Moons</span>
+        <span class="badge badge-pill m-1">Other</span>
+      </p>
+      <p><strong>Story:</strong>
+        <span class="badge badge-pill m-1">Edanverse</span>
+        <span class="badge badge-pill m-1">Jupiter's Moons</span>
+        <span class="badge badge-pill m-1">Other</span>
+      </p>
+      <h4>key:</h4>
+      <ul class="list-unstyled">
+        <li><i class="fas fa-check mr-1"></i> bought!</li>
+        <li><i class="fas fa-heartbeat mr-1"></i>top of wishlist</li>
+        <li><i class="fas fa-heart mr-1"></i> most wanted from artist</li>
+        <li><i class="far fa-heart mr-1"></i> would like, but not priority</li>
+      </ul>
+    </div>
+
+<div class="container d-flex justify-content-center">
+  <ul class="pagination mt-3" id="top-pagination">
+    {% if paginator.previous %}
+      <li class="page-item" id="prev-page">
+        <a class="page-link" href="{{ paginator.previous }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="page-item disabled" id="prev-page">
+        <a class="page-link" href="{{ paginator.previous }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>   
+    {% endif %}
+
+
+
+
+    {% if paginator.next %}
+      <li class="page-item" id="next-page">
+        <a class="page-link" href="{{ paginator.next }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="page-item disabled" id="next-page">
+        <a class="page-link" href="{{ paginator.next }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
+
+<div class="d-flex flex-row flex-wrap" id="wishlist-items">
+
+  {% for page in paginator.pages %}
+  <div class="wishlist-item">
+    <div class="wishlist-banner" style="background-image: url({{ page.extra.banner }});"></div>
+    <div class="rounded-circle" style="background: url({{ page.extra.profile }});"></div>
+    <h5 class="text-center mt-1">{{ page.title }}</h5>
+    <div class="wishlist-tags">
+      {% for tag in page.extra.tags %}
+        <span class="badge badge-pill m-1"><i class="{{ tag.preference }} mr-1"></i> {{ tag.name }}</span>
+      {% endfor %}
+    </div>
+    <hr>
+    <div class="wishlist-socials">
+      {% for contact in page.extra.contact %}
+        <a href="{{ contact.link }}"><i class="{{ contact.name }} m-2"></i></a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+
+<div class="container d-flex justify-content-center">
+  <ul class="pagination mt-3" id="bottom-pagination">
+    {% if paginator.previous %}
+      <li class="page-item" id="bottom-prev-page">
+        <a class="page-link" href="{{ paginator.previous }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="page-item disabled" id="bottom-prev-page">
+        <a class="page-link" href="{{ paginator.previous }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>   
+    {% endif %}
+
+
+
+
+    {% if paginator.next %}
+      <li class="page-item" id="bottom-next-page">
+        <a class="page-link" href="{{ paginator.next }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="page-item disabled" id="bottom-next-page">
+        <a class="page-link" href="{{ paginator.next }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
+<div class="card p-3 mt-3 text-center border-0">
+  © 2021 • 8byte
+</div>
+{% endblock content %}
