@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://friedeggtarts.netlify.com/sitemap.xml

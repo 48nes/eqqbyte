@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-credits");
+  current.classList.add("active");
+</script>
+{% endblock script %}
+
+{% block content %}
+<div class="card p-md-3 p-2">
+  <h3>credits (aka... how I made this)</h3>
+  <p>all of the html was written by me, but I did use <a href="https://getbootstrap.com/">Bootstrap</a> as a starting point for my CSS so I wouldn't have to write a mountain load of code. I used <a href="https://www.getzola.org/">Zola</a> as a static site generator to save some steps and <a href="https://www.netlify.com/">Netlify</a> to host.</p>
+  <p>the icons I've used are all from <a href="https://fontawesome.com/">Font Awesome</a> (the free version since... well yeah) and the fonts I've used are Titillium Web and Raleway from <a href="https://fonts.google.com/">Google Fonts</a> (side note: Raleway is my go-to and favorite font of all time).</p>
+  <p>For images, if they're not already credited on the page, then it was probably drawn by me.</p>
+</div>
+{% endblock content %}

@@ -1,0 +1,255 @@
+$slate: #949494;
+$eggshell: #f7f6f0;
+$taupe: #cdbeb8;
+$rose: #e5c9bf;
+$cream: #e7e7e7;
+
+$demon: #eb9385;
+$nymph: #99c0bc;
+$human: #927782;
+
+$sun: #eca2a2;
+$stars: #c1a2ec;
+$sea: #a2ecd4;
+$sky: #a2dcec;
+$earth: #b9eca2;
+
+$moons: #c4bfdb;
+
+$colors: "slate" $slate, "eggshell" $eggshell, "taupe" $taupe, "rose" $rose, "cream" $cream, "sun" $sun, "stars" $stars, "sea" $sea, "sky" $sky, "earth" $earth, "moons" $moons, "demon" $demon, "nymph" $nymph, "human" $human;
+
+body {
+  background: lighten($cream, 5%);
+  color: darken($slate, 10%);
+  font-family: Raleway;
+}
+
+.theme-toggle {
+  position: absolute; 
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  
+  button {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    i {
+      color: darken($rose, 10%);
+    }
+
+    &:hover {
+      i {
+	color: darken($rose, 20%);
+      }
+    }
+
+    i:before {
+      content: '\f186';
+    }
+  }
+}
+
+a {
+  color: darken($rose, 10%);
+  transition: .3s ease;
+
+  &:hover {
+    color: darken($rose, 20%);
+    text-decoration: none;
+    font-style: italic;
+    transition: .3s ease;
+  }
+}
+
+.img-thumbnail {
+  display: block;
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background: $color!important;
+  }
+
+  .btn-#{$name} {
+    background: $color!important;
+    border-color: $color!important;
+    color: lighten($cream, 20%)!important;
+    
+    &:hover, &.active {
+      background: darken($color, 10%)!important;
+      border-color: darken($color, 10%)!important;
+      color: lighten($cream, 15%)!important;
+      font-style: normal;
+    }
+    
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($color, 0.5)!important;
+    }
+  }
+}
+
+hr {
+  border-top: 1px solid $cream;
+  background: $cream;
+}
+
+#navigation {
+  background: lighten($cream, 20%);
+  border-bottom: 1px solid $cream;
+
+  #nav-home {
+    color: $slate;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Raleway;
+
+    &:hover {
+      color: darken($rose, 20%);
+    }
+  }
+
+  .nav-link {
+    padding: .25rem .5rem;
+    color: darken($rose, 10%);
+    font-family: Titillium Web;
+
+    &:hover {
+      color: $rose;
+      font-style: normal;
+    }
+  }
+}
+
+#content {
+  min-height: 650px;
+  padding: .5rem;
+
+  .card {
+    background: lighten($cream, 20%);
+    border: 1px solid $cream;
+    border-radius: 0;
+  }
+
+  .text-primary {
+    color: darken($rose, 10%)!important;
+    transition: .3s ease;
+
+    &:hover {
+      color: $taupe!important;
+      letter-spacing: 1px;
+      transition: .3s ease;
+    }
+  }
+
+  .social-links {
+    a {
+      color: $slate;
+
+      &:hover {
+	color: darken($slate, 10%);
+
+	i {
+	  color: darken($rose, 20%);
+	}
+      }
+
+      i {
+	color: darken($rose, 10%);
+      }
+    }
+  }
+
+  li {
+    i {
+      color: darken($rose, 10%);
+    }
+  }
+
+  .chara-card .card {
+    border: none;
+  }
+
+  .chara-card .card a {
+    opacity: 0;
+    border: none;
+
+    &:hover {
+      opacity: 1;
+      transition: .3s ease;
+
+      &:after {
+        transform: rotate(360deg);
+        transition: 1s ease;
+      }
+    }
+
+    &:after {
+      font-family: "Font Awesome 5 Free";
+      color: lighten($cream, 20%);
+      font-weight: 900;
+      font-size: 5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      font-style: normal;
+      content: "\f521";
+    }
+
+    &.text-moon:after {
+      content: "\f186";
+    }
+
+    &.text-sun:after {
+      content: "\f7e4";
+    }
+
+    &.text-star:after {
+      content: "\f753";
+    }
+
+    &.text-sea:after {
+      content: "\f773";
+    }
+
+    &.text-sky:after {
+      content: "\f72e";
+    }
+
+    &.text-earth:after {
+      content: "\f4d8";
+    }
+  }
+}
+
+#footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: darken($cream, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $cream;
+  border: 1px solid darken($cream, 5%);
+}
+
+::selection {
+  background: $rose;
+}

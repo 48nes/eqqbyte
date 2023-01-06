@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-media");
+  current.classList.add("active");
+</script>
+{% endblock script %}
+
+{% block content %}
+<div class="row no-gutters">
+  <div class="col-md-8 p-1">
+    <div class="card p-3">
+      <h3>interests</h3>
+      <p>My interests tend to be all over the place, so here's where you can find (almost) everything I've watched/listened to/read that's had some impact on me.</p>
+      <p>I also use this space to keep track of anti-interests, please don't bring up anything listed in that box with me! I do not care if you enjoy them and we can still interact, I just prefer not to talk about them.</p>
+    </div>
+  </div>
+  <div class="col-md-4 p-1">
+    <div class="card h-100 p-3">
+      <h3>navigation</h3>
+      <div class="d-flex flex-row flex-wrap">
+        <a href="/media#characters" class="btn btn-taupe rounded-0 btn-sm m-1">Characters</a>
+        <a href="/media#films" class="btn btn-taupe rounded-0 btn-sm m-1">Movies/TV</a>
+        <a href="/media#books" class="btn btn-taupe rounded-0 btn-sm m-1">Books</a>
+        <a href="/media#celebs" class="btn btn-taupe rounded-0 btn-sm m-1">Celebrities</a>
+        <a href="/media#anime" class="btn btn-taupe rounded-0 btn-sm m-1">Anime</a>
+        <a href="/media#misc" class="btn btn-taupe rounded-0 btn-sm m-1">Miscellaneous</a>
+        <a href="/media#music" class="btn btn-taupe rounded-0 btn-sm m-1">Music</a>
+        <a href="/media#anti" class="btn btn-taupe rounded-0 btn-sm m-1">Anti-Interests</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4 px-1">
+    <div class="card p-3 my-2">
+      <div id="characters" style="position: relative; top: -40px;"></div>
+      <h3>characters</h3>
+      <p>
+        <strong>Note:</strong> Characters with a <i class="fas fa-egg"></i> are characters I relate to heavily, while all others are just characters I like a lot.
+      </p>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-egg mr-2"></i> Courtney, Total Drama</li>
+        <li><i class="fas fa-egg mr-2"></i> Roberta "Bertie" Songthrush, Tuca and Bertie</li>
+        <li><i class="fas fa-egg mr-2"></i> Pearl, Steven Universe</li>
+        <li><i class="fas fa-egg mr-2"></i> Dipper Pines, Gravity Falls</li>
+        <li><i class="fas fa-egg mr-2"></i> Rika Kawai, Wonder Egg Priority</li>
+        <li><i class="fas fa-egg mr-2"></i> Flame Princess, Adventure Time</li>
+        <li><i class="fas fa-egg mr-2"></i> Kaguya Shinomiya, Love is War</li>
+        <li><i class="fas fa-egg mr-2"></i> Shizuku Mizutani, Tonari no Kaibutsu-kun</li>
+        <li><i class="fas fa-egg mr-2"></i> Kaori Miyazono, Your Lie in April</li>
+        <li><i class="fas fa-egg mr-2"></i> Reagan Ridley, Inside Job</li>
+        <li><i class="fas fa-minus mr-2"></i> Kiryuin Satsuki, Kill la Kill</li>
+        <li><i class="fas fa-minus mr-2"></i> Saotome Mary, Kakegurui</li>
+        <li><i class="fas fa-minus mr-2"></i> Nakiri Alice, Shokugeki no Soma</li>
+        <li><i class="fas fa-minus mr-2"></i> Ene, Kagerou Project</li>
+        <li><i class="fas fa-minus mr-2"></i> Yato, Noragami</li>
+        <li><i class="fas fa-minus mr-2"></i> Yukihira Soma, Shokugeki no Soma</li>
+        <li><i class="fas fa-minus mr-2"></i> Eruna Ichinomiya, Mikagura Gakuen Kumikyoku</li>
+        <li><i class="fas fa-minus mr-2"></i> Karma Akabane, Assassination Classroom</li>
+        <li><i class="fas fa-minus mr-2"></i> Azula, The Last Airbender</li>
+        <li><i class="fas fa-minus mr-2"></i> Nise Mayuko, Tenkuu Shinpan</li>
+      </ul>
+    </div>
+
+    <div class="card p-3 my-2">
+      <div id="celebs" style="position: relative; top: -40px;"></div>
+      <h3>celebrities</h3>
+      <p><strong>Note:</strong> I'm usually anti-celebrity culture, but sometimes I am a stan.</p>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-minus mr-2"></i> Doja Cat</li>
+        <li><i class="fas fa-minus mr-2"></i> Lil Nas X</li>
+        <li><i class="fas fa-minus mr-2"></i> Megan Fox</li>
+        <li><i class="fas fa-minus mr-2"></i> Robert Pattinson</li>
+        <li><i class="fas fa-minus mr-2"></i> Kristen Stewart (I have not watched Twilight and refuse to)</li>
+        <li><i class="fas fa-minus mr-2"></i> Lorde</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-4 px-1">
+    <div class="card p-3 my-2">
+      <div id="films" style="position: relative; top: -40px;"></div>
+      <h3>movies/tv</h3>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-minus mr-2"></i> Severance (2022-Present)</li>
+        <li><i class="fas fa-minus mr-2"></i> Euphoria (2019-Present)</li>
+        <li><i class="fas fa-minus mr-2"></i> Adventure Time (2010-2018)</li>
+        <li><i class="fas fa-minus mr-2"></i> Bojack Horseman (2014-2020)</li>
+        <li><i class="fas fa-minus mr-2"></i> The Lovebirds (2020)</li>
+        <li><i class="fas fa-minus mr-2"></i> Eternal Sunshine of the Spotless Mind (2004)</li>
+        <li><i class="fas fa-minus mr-2"></i> Spy Kids Franchise (2001-2003)</li>
+        <li><i class="fas fa-minus mr-2"></i> The Haunting of Hill House (2018)</li>
+        <li><i class="fas fa-minus mr-2"></i> Tuca and Bertie (2019-Present)</li>
+        <li><i class="fas fa-minus mr-2"></i> Mindhunter (2017-2019)</li>
+      </ul>
+    </div>
+
+    <div class="card p-3 my-2">
+      <div id="anime" style="position: relative; top: -40px;"></div>
+      <h3>anime</h3>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-minus mr-2"></i> Noragami</li>
+        <li><i class="fas fa-minus mr-2"></i> Kagerou Project/Mekakucity Actors</li>
+        <li><i class="fas fa-minus mr-2"></i> Shokugeki no Soma</li>
+        <li><i class="fas fa-minus mr-2"></i> Kyoukai no Kanata</li>
+        <li><i class="fas fa-minus mr-2"></i> Kill la Kill</li>
+        <li><i class="fas fa-minus mr-2"></i> Mirai Nikki</li>
+        <li><i class="fas fa-minus mr-2"></i> Mikagura Gakuen Kumikyoku</li>
+        <li><i class="fas fa-minus mr-2"></i> Neon Genesis Evangelion</li>
+        <li><i class="fas fa-minus mr-2"></i> Puella Magi Madoka Magica</li>
+        <li><i class="fas fa-minus mr-2"></i> Wonder Egg Priority (season 1)</li>
+        <li><i class="fas fa-minus mr-2"></i> Your Lie in April</li>
+      </ul>
+    </div>
+
+    <div class="card p-3 my-2">
+      <div id="music" style="position: relative; top: -40px;"></div>
+      <h3>music</h3>
+      <p>I consider myself a TFB sun, Mitski moon, The Neighbourhood rising, Sir Chloe venus and if you understand what that means... I'm sorry.</p>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-minus mr-2"></i> The Front Bottoms</li>
+        <li><i class="fas fa-minus mr-2"></i> Mitski</li>
+        <li><i class="fas fa-minus mr-2"></i> The Neighbourhood</li>
+        <li><i class="fas fa-minus mr-2"></i> Sir Chloe</li>
+        <li><i class="fas fa-minus mr-2"></i> Lorde</li>
+        <li><i class="fas fa-minus mr-2"></i> Waterparks</li>
+        <li><i class="fas fa-minus mr-2"></i> Arctic Monkeys</li>
+        <li><i class="fas fa-minus mr-2"></i> Glass Animals</li>
+        <li><i class="fas fa-minus mr-2"></i> Wallows</li>
+        <li><i class="fas fa-minus mr-2"></i> Eve</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="col-md-4 px-1">
+   <div class="card p-3 my-2">
+      <div id="books" style="position: relative; top: -40px;"></div>
+     <h3>books</h3>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-minus mr-2"></i> My Year of Rest and Relaxation by Otessa Moshfegh</li>
+        <li><i class="fas fa-minus mr-2"></i> Perks of Being a Wallflower by Stephen Chbosky</li>
+        <li><i class="fas fa-minus mr-2"></i> The Chronology of Water by Lidia Yuknavitch</li>
+        <li><i class="fas fa-minus mr-2"></i> A Series of Unfortunate Events by Lemony Snicket</li>
+        <li><i class="fas fa-minus mr-2"></i> The Hunger Games by Suzanne Collins</li>
+      </ul>
+   </div>
+
+    <div class="card p-3 my-2">
+      <div id="misc" style="position: relative; top: -40px;"></div>
+      <h3>misc media</h3>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-minus mr-2"></i> Portal (video game)</li>
+        <li><i class="fas fa-minus mr-2"></i> Life is Strange (video game)</li>
+        <li><i class="fas fa-minus mr-2"></i> Love Nikki (mobile game)</li>
+        <li><i class="fas fa-minus mr-2"></i> Bo Burnham (comedian)</li>
+        <li><i class="fas fa-minus mr-2"></i> Heathers (musical)</li>
+        <li><i class="fas fa-minus mr-2"></i> Little Beast by Richard Siken (poem)</li>
+        <li><i class="fas fa-minus mr-2"></i> I Know What You Think of Me by Tim Kreider (essay)</li>
+        <li><i class="fas fa-minus mr-2"></i> Outbound by Hieu Minh Nguyen (poem)</li>
+        <li><i class="fas fa-minus mr-2"></i> The Woman Dies by Aoko Matsuda (poem)</li>
+      </ul>
+    </div>
+
+    <div class="card p-3 my-2">
+      <div id="anti" style="position: relative; top: -40px;"></div>
+      <h3>anti-interests</h3>
+      <p><strong>Note:</strong> I do not care if you enjoy anything listed here. This isn't to serve as a DNI, these are just things I happen to dislike and would prefer to avoid.</p>
+      <ul class="list-unstyled intro-card">
+        <li><i class="fas fa-times mr-2"></i> Taylor Swift</li>
+        <li><i class="fas fa-times mr-2"></i> Thomas Sanders</li>
+        <li><i class="fas fa-times mr-2"></i> MCYT*</li>
+        <li><i class="fas fa-times mr-2"></i> 13 Reasons Why</li>
+        <li><i class="fas fa-times mr-2"></i> Riverdale</li>
+        <li><i class="fas fa-times mr-2"></i> Olivia Rodrigo**</li>
+      </ul>
+      <p>*I don't care to learn what MCYT is, I think some of the fanart I've seen going around is pretty neat.</p>
+      <p>**I like some of her songs, I am just uninterested in her fanbase.</p>
+    </div>
+  </div>
+</div>
+{% endblock content %}
