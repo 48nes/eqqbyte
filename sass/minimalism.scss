@@ -1,0 +1,157 @@
+%bg-image {
+  background: #ffffff;
+}
+
+$main-bg: #f2f1f3;
+$borders: #dedde3;
+$main-text: #1c1c1c;
+
+$accent: #a497bf;
+
+
+body {
+  @extend %bg-image;
+  color: $main-text;
+  font-family: 'Mukta', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: $accent;
+
+  &:hover, &:focus, &:active {
+    color: darken($accent, 10%);
+    text-decoration: none;
+  }
+}
+
+.card {
+  background: $main-bg;
+  border-color: $borders;
+  border-radius: 0;
+}
+
+.img-thumbnail {
+  display: block;
+  border-radius: 0;
+  background: $main-bg;
+  border-color: $borders;
+}
+
+a.img-thumbnail {
+  &:hover {
+    border-color: $accent;
+    transition: .3s ease;
+  }
+}
+
+.character-name {
+  display: block;
+  background: $borders;
+  padding: .25rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+hr {
+  border-top: 1px solid $borders;
+}
+
+.bg-accent {
+  background: $accent;
+}
+
+.bg-faded {
+  background: $borders;
+}
+
+.text-accent {
+  color: $accent;
+}
+
+.text-body {
+  color: $main-text !important;
+}
+
+.text-muted {
+  color: darken($main-text, 10%);
+}
+
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.btn-sm {
+  padding: .125rem 1.25rem;
+}
+
+.btn-accent {
+  background: $accent;
+  border-color: $accent;
+  color: $main-bg;
+
+  &:hover {
+    background: darken($accent, 10%);
+    border-color: darken($accent, 10%);
+    color: $main-bg;
+  }
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  button {
+    background: $main-bg;
+    color: $accent;
+    border: none;
+    padding: .75rem;
+    border-radius: 0 0 0 20px;
+    border-left: 1px solid $borders;
+    border-bottom: 1px solid $borders;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:active, &:focus {
+      outline: none;
+    }
+
+    i {
+      &:before {
+        content: '\f186';
+      }
+    }
+  }
+}
+
+#main {
+
+  #content {
+    @media screen and (min-width: 776px) {
+      margin: 80px 0 10px 0;
+    }
+
+    .title {
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: darken($main-text, 5%);
+      text-shadow: 5px 10px rgba($accent, 0.6);
+
+      .reverse {
+        color: $accent;
+        text-shadow: 5px 10px rgba(darken($main-text, 5%), 0.6);
+      }
+    }
+
+    .fa-chevron-right, .fa-discord {
+      color: $accent;
+      font-size: 10px;
+    }
+  }
+}
