@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-home");
+  current.classList.add("active");
+</script>
+{% endblock script %}
+
+{% block content %}
+<div class="hidden-md-down" style="height: 60px;"></div>
+<div class="card mx-auto" style="max-width: 700px;">
+  <div class="row no-gutters">
+    <div class="col-md-4 p-2">
+      <div class="bg-accent h-100 p-1" style="min-height: 400px; position: relative; z-index: 99;">
+        <div style="background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/55684422_cymZKtETPjY2uDA.png?1664976526'); background-size: 400px; background-position: top; height: 100%;"></div>
+      </div>
+    </div>
+    <div class="col-md-8 d-flex flex-column p-2">
+      <div class="mt-auto mb-0"></div>
+      <h1 class="title">
+        <span class="reverse">#</span>
+        <span>eqqbyte</span>
+      </h1>
+      <span class="text-muted text-uppercase">she/her | 20 | eng/cn</span>
+      <div class="p-1"></div>
+      <p>just a silly little web dev on the internet :) made this site as an alternative to carrd because 
+        I wanted more customization lol
+      </p>
+      <ul class="list-unstyled mb-0">
+        <li class="text-muted"><i class="fas fa-chevron-right mr-2"></i> call me <span class="text-body">egg</span>, friends can call me <span class="text-body">agnes</span> :)</li>
+        <li class="text-muted"><i class="fas fa-chevron-right mr-2"></i> please <span class="text-accent">dni</span> if you're a lot younger/older than me</li>
+      </ul>
+      <div class="p-2"></div>
+      <strong class="text-uppercase" style="letter-spacing: 1px;">navigation</strong>
+      <div class="d-flex flex-row flex-wrap mx-n1">
+        <a href="/characters" class="btn btn-sm btn-accent m-1">characters</a>
+        <a href="/interests" class="btn btn-sm btn-accent m-1">interests</a>
+        <a href="/projects" class="btn btn-sm btn-accent m-1">projects</a>
+        <a href="/credits" class="btn btn-sm btn-accent m-1">credits</a>
+      </div>
+      <div class="p-4"></div>      
+    </div>
+    <div class="col-12 d-flex justify-content-end align-items-center bg-faded mt-n5">
+      <div class="text-right p-2">
+        <a href="https://eqqbyte.tumblr.com" class="mx-1">tumblr</a>
+        <a href="https://twitter.com/eqqbyte" class="mx-1">twitter</a>
+        <a href="https://toyhou.se/eggbyte" class="mx-1">toyhouse</a>
+        <i class="fab fa-discord mr-1"></i>
+        <span class="text-muted">egg#4802</span>
+        <a href="/socials" class="mx-2" data-toggle="tooltip" data-placement="bottom" title="more sites">
+          <i class="fas fa-plus"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

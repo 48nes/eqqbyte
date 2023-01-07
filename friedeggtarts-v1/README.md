@@ -1,2 +1,0 @@
-# friedeggtarts site archive
- 
