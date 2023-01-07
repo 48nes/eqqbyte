@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-characters");
+  current.classList.add("active");
+</script>
+{% endblock script %}
+
+{% block content %}
+<div class="row no-gutters">
+  <div class="col-md-8 p-1">
+    <div class="card p-3 border-0">
+      <h1>characters</h1>
+      <p>These are the main original characters I've created over the years and the stories they're a part of.</p>
+      <p>You can also check out my <a href="/wishlist">art wishlist</a> for these characters if you're feeling generous! (or if you just want to check out some cool artists)</p>
+    </div>
+  </div>
+  <div class="col-md-4 p-1">
+    <div class="card h-100 p-3 border-0">
+      <h1>navigation</h1>
+      <div class="d-flex flex-row flex-wrap">
+        <a href="/characters#edanverse" class="badge badge-pill badge-primary m-1">Edanverse</a>
+        <a href="/characters#jupiter" class="badge badge-pill badge-primary m-1">Jupiter's Moons</a>
+        <a href="/characters#quiet-towns" class="badge badge-pill badge-primary m-1">Quiet Towns</a>
+        <a href="/characters#misc" class="badge badge-pill badge-primary m-1">Miscellaneous</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 p-1">
+    <div class="card h-100 p-3 border-0">
+      <div id="edanverse" style="position: relative; top: -40px;"></div>
+      <h1><a href="/characters/edanverse">edanverse</a></h1>
+      <p>The Edanverse is a massive fantasy world where demons, nymphs, and humans coexist. Find out who you are by taking my <a href="https://uquiz.com/IyUYpV">uquiz</a> and which affiliation you'd be under by taking <a href="https://uquiz.com/C4QM4H">this uquiz</a>!</p>
+      <p><strong>Species:</strong>
+        <span class="badge badge-pill badge-demon m-1">Demon</span>
+        <span class="badge badge-pill badge-nymph m-1">Nymph</span>
+        <span class="badge badge-pill badge-human m-1">Human</span>
+      </p>
+      <p><strong>Affiliation:</strong>
+        <span class="badge badge-pill badge-sun m-1"><i class="fas fa-fire-alt mr-1"></i>Sun</span>
+        <span class="badge badge-pill badge-stars m-1"><i class="fas fa-meteor mr-1"></i>Stars</span>
+        <span class="badge badge-pill badge-sea m-1"><i class="fas fa-water mr-1"></i>Sea</span>
+        <span class="badge badge-pill badge-sky m-1"><i class="fas fa-wind mr-1"></i>Sky</span>
+        <span class="badge badge-pill badge-earth m-1"><i class="fas fa-seedling mr-1"></i>Earth</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-12 p-1">
+    {% set edan = get_section(path='characters/edanverse/_index.md') %}
+    <div class="row no-gutters">
+
+    {% for page in edan.pages %}
+      <div class="col-lg-2 col-md-3 col-6 p-1">
+        <div class="chara-card card p-1 border-0">
+          <div class="card border-0" style="background: url({{ page.extra.image }}); background-size: cover;">
+            <a class="card text-center {{ page.extra.classes }} w-100 border-0" href="{{ page.permalink }}" style="padding-top: 100%;">
+            </a>
+          </div>
+        </div>
+        <div class="card p-2 m-1 text-center border-0" style="border-radius: 20px;">
+          <h5 class="text-uppercase"><a href="{{ page.permalink }}">{{ page.title }}</a></h5>
+          <hr class="my-0 mx-2">
+          <span class="font-italic">{{ page.description }}</span>
+        </div>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="col-md-12 p-1">
+    <div class="card h-100 p-3 border-0">
+      <div id="jupiter" style="position: relative; top: -40px;"></div>
+      <h1><a href="/characters/jupiters%20moons">jupiter's moons</a></h1>
+      <p>Jupiter's Moons follows a team of three magical girls and their adventures fighting a mysterious organization called HERA.</p>
+    </div>
+  </div>
+
+  <div class="col-12 p-1">
+    {% set jupiter = get_section(path='characters/jupiters moons/_index.md') %}
+    <div class="row no-gutters">
+
+    {% for page in jupiter.pages %}
+      <div class="col-lg-2 col-md-3 col-6 p-1">
+        <div class="chara-card card p-1 border-0">
+          <div class="card border-0" style="background: url({{ page.extra.image }}); background-size: cover;">
+            <a class="card text-center {{ page.extra.classes }} w-100 border-0" href="{{ page.permalink }}" style="padding-top: 100%;">
+            </a>
+          </div>
+        </div>
+        <div class="card p-2 m-1 text-center border-0" style="border-radius: 20px;">
+          <h5 class="text-uppercase"><a href="{{ page.permalink }}">{{ page.title }}</a></h5>
+          <hr class="my-0 mx-2">
+          <span>{{ page.description }}</span>
+        </div>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="col-md-12 p-1">
+    <div class="card h-100 p-3 border-0">
+      <div id="quiet-towns" style="position: relative; top: -40px;"></div>
+      <h1><a href="/characters/quiet%20towns">quiet towns</a></h1>
+      <p>Time walks itself into a circle in the quiet towns of Brookside and Ledford.</p>
+    </div>
+  </div>
+
+  <div class="col-12 p-1">
+    {% set quiet = get_section(path='characters/quiet towns/_index.md') %}
+    <div class="row no-gutters">
+
+    {% for page in quiet.pages %}
+      <div class="col-lg-2 col-md-3 col-6 p-1">
+        <div class="chara-card card p-1 border-0">
+          <div class="card border-0" style="background: url({{ page.extra.image }}); background-size: cover;">
+            <a class="card text-center {{ page.extra.classes }} w-100 border-0" href="{{ page.permalink }}" style="padding-top: 100%;">
+            </a>
+          </div>
+        </div>
+        <div class="card p-2 m-1 text-center border-0" style="border-radius: 20px;">
+          <h5 class="text-uppercase"><a href="{{ page.permalink }}">{{ page.title }}</a></h5>
+          <hr class="my-0 mx-2">
+          <span class="font-italic">{{ page.description }}</span>
+        </div>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="col-md-12 p-1">
+    <div class="card h-100 p-3 border-0">
+      <div id="misc" style="position: relative; top: -40px;"></div>
+      <h1>miscellaneous</h1>
+      <p>Miscellaneous characters I've collected over the years.</p>
+      <p><strong>Fandom:</strong>
+        <span class="badge badge-pill m-1">Unaffiliated</span>
+        <span class="badge badge-pill m-1">Sona</span>
+        <span class="badge badge-pill m-1">Steven Universe</span>
+        <span class="badge badge-pill m-1">BNHA</span>
+        <span class="badge badge-pill m-1">MLP</span>
+      </p>
+      <p><strong>Species:</strong>
+        <span class="badge badge-pill m-1">Human</span>
+        <span class="badge badge-pill m-1">Humanoid</span>
+        <span class="badge badge-pill m-1">Anthro</span>
+        <span class="badge badge-pill m-1">Feral</span>
+        <span class="badge badge-pill m-1">Closed Species</span>
+      </p>
+      <p><strong>Trade Status:</strong>
+        <span class="badge badge-pill badge-ufs m-1">UFS/UFT</span>
+        <span class="badge badge-pill badge-tent m-1">Tentative</span>
+        <span class="badge badge-pill badge-home m-1">Forever Homed</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-12 p-1">
+    {% set misc = get_section(path='characters/miscellaneous/_index.md') %}
+    <div class="row no-gutters">
+
+    {% for page in misc.pages %}
+      <div class="col-lg-2 col-md-3 col-6 p-1">
+        <div class="chara-card card p-1 border-0">
+          <div class="card border-0" style="background: url({{ page.extra.image }}); background-size: cover;">
+            <a class="card text-center {{ page.extra.classes }} w-100 border-0" href="{{ page.permalink }}" style="padding-top: 100%;">
+            </a>
+          </div>
+        </div>
+        <div class="card p-2 m-1 text-center border-0" style="border-radius: 20px;">
+          <h5 class="text-uppercase"><a href="{{ page.permalink }}">{{ page.title }}</a></h5>
+          <hr class="my-0 mx-2">
+	  <span>
+	  {% for tag in page.extra.tags %}
+          <span class="badge badge-pill m-1">{{ tag }}</span>
+	  {% endfor %}
+          <span class="badge badge-pill {{ page.extra.trade.tag }} m-1">{{ page.extra.trade.name }}</span>
+	  </span>
+        </div>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+
+</div>
+<div class="card p-3 mt-3 text-center border-0">
+  © 2021 • 8byte
+</div>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-characters");
+  current.classList.add("active");
+</script>
+{% endblock script %}
+
+{% block content %}
+  {{ page.content | safe }}
+<div class="card p-3 mt-3 text-center border-0">
+  © 2021 • 8byte
+</div>
+{% endblock content %}

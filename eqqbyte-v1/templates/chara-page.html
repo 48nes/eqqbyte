@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-characters");
+  current.classList.add("active");
+</script>
+{% endblock script %}
+
+{% block content %}
+  {{ page.content | safe }}
+{% endblock content %}

@@ -1,0 +1,470 @@
+/* variables */
+$eggshell: #f6f2ec;
+$lavender: #c4bfdb;
+$rose: #f8cbd1;
+$cream: #f7e5d7;
+$mint: #d3f8e2;
+$yolk: #fcf5c7;
+$blush: #ffb7c3;
+
+$charcoal: #323131;
+
+$rose-ebony: #785459;
+$wisteria: #8472d4;
+
+body {
+  background: url(https://images.unsplash.com/photo-1516718674638-5dd513524b36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+  color: $charcoal;
+  font-family: Raleway;
+}
+
+a {
+  color: $wisteria;
+}
+
+a:hover {
+  color: $rose;
+  text-decoration: none;
+}
+
+.row-hoverable:hover {
+  background: $cream;
+}
+
+.intro-card li:hover {
+  transform: translateX(20px);
+  transition: 1s ease;
+}
+
+.chara-card .card a {
+  opacity: 0;
+}
+
+.chara-card+.card span {
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+.chara-card .card a:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.chara-card .card a:after {
+  content: "\f521";
+}
+
+.chara-card .card a.text-moon:after {
+  content: "\f186";
+}
+
+.chara-card .card a.text-sun:after {
+  content: "\f7e4";
+}
+
+.chara-card .card a.text-star:after {
+  content: "\f753";
+}
+
+.chara-card .card a.text-sea:after {
+  content: "\f773";
+}
+
+.chara-card .card a.text-sky:after {
+  content: "\f72e";
+}
+
+.chara-card .card a.text-earth:after {
+  content: "\f4d8";
+}
+
+.chara-card .card a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 5rem;
+  color: $eggshell;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.chara-card .card a:hover:after {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
+.card, .wishlist-item {
+  background: $eggshell; 
+  border-radius: 30px;
+}
+
+.wishlist-item {
+  padding: 5px;
+  margin: 0.4%;
+  width: 19%;
+}
+
+.wishlist-banner {
+  height: 100px;
+  background: $lavender;
+  background-size: cover!important;
+  background-position: center;
+  border-radius: 30px 30px 0 0;
+}
+
+.wishlist-item .rounded-circle {
+  height: 125px;
+  width: 125px;
+  margin: auto;
+  margin-top: -62.5px;
+  background-size: cover!important;
+}
+
+.wishlist-tags, .wishlist-socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.wishlist-item hr {
+  margin: 0 10px;
+}
+
+.wishlist-socials {
+  justify-content: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+.page-item .page-link {
+  background: $eggshell!important;
+  border: none;
+  color: $wisteria;
+}
+
+.page-item .page-link:hover, .page-item .page-link:active {
+  background: $cream!important;
+  color: $rose-ebony;
+}
+
+.page-item .page-link.active {
+  background: $rose!important;
+  color: $rose-ebony;
+}
+
+.badge.badge-primary {
+  background: $wisteria;
+  color: $eggshell;
+  font-size: 18px;
+}
+
+.badge.badge-primary:hover {
+  background: $rose!important;
+}
+
+.badge, .bg-lavender {
+  background: $lavender;
+}
+
+.bg-rose {
+  background: $rose;
+}
+
+.bg-cream {
+  background: $cream;
+}
+
+.badge:hover {
+  background: $cream;
+}
+
+.badge.badge-demon, .bg-demon {
+  background: #eb9385;
+}
+
+.badge.badge-demon:hover {
+  background: #f0b1a8;
+}
+
+.badge.badge-nymph, .bg-nymph {
+  background: #99c0bc;
+}
+
+.badge.badge-nymph:hover {
+  background: #c0d8d6;
+}
+
+.badge.badge-human, .bg-human {
+  background: #927782;
+}
+
+.badge.badge-human:hover {
+  background: #bfb0b6;
+}
+
+.badge.badge-sun {
+  background: #eca2a2;
+}
+
+.badge.badge-sun:hover {
+  background: #f8dddd;
+}
+
+.badge.badge-stars {
+  background: #c1a2ec;
+}
+
+.badge.badge-stars:hover {
+  background: #e8ddf8;
+}
+
+.badge.badge-sea {
+  background: #a2ecd4;
+}
+
+.badge.badge-sea:hover {
+  background: #ddf8f0;
+}
+
+.badge.badge-sky {
+  background: #a2dcec;
+}
+
+.badge.badge-sky:hover {
+  background: #ddf2f8;
+}
+
+.badge.badge-earth {
+  background: #b9eca2;
+}
+
+.badge.badge-earth:hover {
+  background: #e6f8dd;
+}
+
+.badge.badge-ufs {
+  background: $mint;
+}
+
+.badge.badge-tent {
+  background: $yolk;
+}
+
+.badge.badge-home {
+  background: $blush;
+}
+
+.badge.badge-ufs:hover, .badge.badge-tent:hover, .badge.badge-home:hover {
+  background: $cream;
+}
+
+.btn {
+  background: $rose;
+  border-color: $rose;
+  color: $rose-ebony;
+}
+
+.btn:hover, .btn.active {
+  background: $cream;
+  border-color: $cream;
+  color: $rose-ebony;
+}
+
+.btn:focus, .btn:active {
+  background: $cream!important;
+  border-color: $cream!important;
+  color: $rose-ebony!important;
+  box-shadow: 0px 0px 3px $rose-ebony!important;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  margin-top: 40px;
+  z-index: 99999;
+}
+
+.navbar .edges {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  background: $lavender;
+  transform: scaleX(0.6);
+  transition: 1s ease;
+}
+
+.navbar.atTop .edges {
+  transform: scaleX(1);
+  box-shadow: 0px 0px 2px $charcoal;
+  transition: 1s ease;
+}
+
+.navbar .nav {
+  width: 100%;
+  border-radius: 30px;
+  background: $eggshell;
+  transition: 2s ease;
+  padding: 0 20px;
+}
+
+.navbar .nav a {
+  color: $rose-ebony;
+  text-transform: uppercase;
+  font-family: Titillium Web;
+}
+
+.navbar .nav a:hover {
+  color: $rose;
+}
+
+.navbar .nav a.active {
+  border-bottom: 5px solid $rose;
+}
+
+.navbar.atTop .nav {
+  border-radius: 0;
+  background: $lavender;
+}
+
+.navbar.atTop .nav a {
+  color: $eggshell;
+}
+
+.navbar.atTop .nav a:hover, .navbar.atTop .nav a.active {
+  border-bottom: none;
+  background: linear-gradient(90deg, $cream 0%, $rose 35%, $lavender 100%);
+  transition: 2s ease;
+}
+
+#content {
+  min-height: 700px;
+  margin: 0;
+  max-width: 100%!important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+a:hover i.fa-chevron-right:before {
+  content: "\f061";
+}
+
+a[aria-expanded="true"] i.fa-chevron-down:before {
+  content: "\f077";
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: black;
+  color: $lavender;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 99;
+}
+
+@media screen and (min-width: 767px) {
+  #content {
+     padding: 40px;
+  }
+  
+  .navbar {
+     padding: 0 40px;
+  }
+  
+  .side-box {
+    border-radius: 0 30px 30px 0;
+  }
+
+  .edanverse-character>img {
+    width: 30%;
+  }
+
+  .edanverse-character>img+.card+.card {
+    margin-left: -80px;
+    width: 100%;
+  }
+
+  .edanverse-character>img+.card {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #content {
+     padding: 5px;
+  }
+
+  .navbar {
+    padding: 0 5px;
+  }
+
+  .nav-link {
+    padding: 5px 10px;
+  }
+  
+  .navbar .nav {
+    justify-content: center;
+  }
+  
+  .wishlist-item {
+    width: 48%!important;
+  }
+
+  .side-box {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .edanverse-character>img {
+    display: none;
+  }
+
+  .edanverse-character>img+.card {
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar { 
+  width: 10px;
+}
+
+::-webkit-scrollbar-track { 
+  background: $lavender;
+  border-left: 4px solid $eggshell;
+  border-right: 4px solid $eggshell;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $lavender;
+  border-radius: 5px;
+}
+
+::selection {
+  background: $lavender;
+}
+
+::-moz-selection {
+  background: $lavender;
+}

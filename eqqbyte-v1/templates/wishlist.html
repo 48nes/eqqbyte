@@ -1,0 +1,599 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script>
+  var current = document.getElementById("nav-characters");
+  current.classList.add("active");
+</script>
+{% endblock script %}
+
+{% block content %}
+<div>
+  <div class="card rounded-0 p-3" style="background: url(https://64.media.tumblr.com/6c7788ecd70b33fa411fc0e28386b282/69b4d94fcd3c8f2a-37/s1280x1920/715b167fc5f2e56482c90ec0374dfffaef931c69.jpg); background-size: cover;">
+    <div class="card p-3 rounded-0">
+      <h1 class="text-center display-4">art wishlist</h1>
+    </div>
+  </div>
+  <div class="card text-center rounded-0 p-md-3 p-2 mt-2">
+    <p>A quick guide of which characters/relationships I want art for + the styles I like. I tend to be quite picky with art, so unless we're mutuals, please <span class="text-primary">DM me beforehand</span> even if it's a freebie!</p>
+    <hr class="w-100 my-2">
+    <span class="mt-2">Click on the story titles to navigate!</span>
+  </div>
+  <div class="row no-gutters mt-1 mx-n1">
+    <div class="col-md-4 p-1">
+      <div class="card rounded-0 p-1">
+        <h3 class="text-center text-uppercase display-4 mb-0" style="font-size: 24px;">
+          <a href="#EDANVERSE" data-toggle="collapse">Edanverse</a>
+        </h3>
+        <p class="font-italic mb-1 text-center">fantasy . adventure</p>
+        <div class="container" style="background: url(https://images.unsplash.com/photo-1460411794035-42aac080490a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80); background-size: cover; height: 100px;"></div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 p-1">
+      <div class="card rounded-0 p-1">
+        <h3 class="text-center text-uppercase display-4 mb-0" style="font-size: 24px;">
+          <a href="#JUPITER" data-toggle="collapse">Jupiter's Moons</a>
+        </h3>
+        <p class="font-italic mb-1 text-center">fantasy . magical girls</p>
+        <div class="container" style="background: url(https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1181&q=80); background-size: cover; background-position: bottom; height: 100px;"></div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 p-1">
+      <div class="card rounded-0 p-1">
+        <h3 class="text-center text-uppercase display-4 mb-0" style="font-size: 24px;">
+          <a href="#QUIET" data-toggle="collapse">Quiet Towns</a>
+        </h3>
+        <p class="font-italic mb-1 text-center">slice of life . time travel</p>
+        <div class="container" style="background: url(https://images.unsplash.com/photo-1458419544033-a5f45c6e4a49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80); background-size: cover; background-position: center; height: 100px;"></div>
+      </div>
+    </div>
+    
+    <div class="w-100 p-1" id="PARENT">
+      <div class="collapse show" id="EDANVERSE" data-parent="#PARENT">
+        <div class="card rounded-0 p-2">
+          <h1 class="text-center display-4 text-uppercase text-taupe" style="font-size: 24px;">Edanverse Wishlist</h1>
+          <hr class="w-100 mt-1 mb-2">
+          <h1 class="text-center display-4 font-italic" style="font-size: 18px;">Single Character</h1>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/rin" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796015?1608327477">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/elias" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5798728?1641967705">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/jennie" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814192?1608328255">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/arya" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814187?1608328468">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/ten" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814197?1608328475">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/cael" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796575?1608328185">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/adhafera" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/4241786?1617725316">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/alek" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5827284?1616646931">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/thia" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5851288?1616731042">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/crys" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5851286?1616730951">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> looking for artwork similar to <a href="https://www.deviantart.com/eggbyte/favourites/91149446/01">these styles</a></li>
+            <li><i class="fas fa-minus mr-2"></i> anything involving alternate outfits from their respective <a href="https://www.pinterest.com/eqqbyte/ocs-edanverse">outfit boards</a>! I love seeing them in different outfits.</li>
+            <li><i class="fas fa-minus mr-2"></i> not interested in anime styles for this specific story</li>
+            <li><i class="fas fa-minus mr-2"></i> the most updated references are always in my <a href="https://docs.google.com/document/d/1HhGmpbj1Gjp5AtcPRcnaCYu6nuuMwV7tz-_jY5k7S7g/edit#">commissioner's reference doc</a></li>
+          </ul>
+          <hr class="w-100 mt-1 mb-2">
+          <h1 class="text-center display-4 font-italic" style="font-size: 18px;">Relationships</h1>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/rin" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796015?1608327477">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/elias" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5798728?1641967705">
+              </a>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> <a href="/characters/edanverse/rin/10612884.character-memes/43907046">Rilias</a> my beloved... my number one priority always!!!</li>
+            <li><i class="fas fa-minus mr-2"></i> Looking to maybe get <a href="https://toyhou.se/~literature/113866.edanverse-notes/2.story-snippet">this scene</a> illustrated?</li>
+            <li><i class="fas fa-minus mr-2"></i> Honestly... looking for cute fluffy art :)!</li>
+            <li><i class="fas fa-minus mr-2"></i> Eli is kinda edgy while Rin is babey (but can get scary when angry), Eli tried to scam her at first but hen the fact that she was just... so naive about it made him feel bad so he ended up befriending her and she became his first friend. </li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/jennie" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814192?1608328255">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/arya" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814187?1608328468">
+              </a>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> <a href="/characters/edanverse/arya/10612899.character-memes/43907080">Jenrya</a>........... fashionable problematic duo</li>
+            <li><i class="fas fa-minus mr-2"></i> PLEASE PLEASE PLEASE check out their fashion boards (<a href="https://www.pinterest.com/friedeggtarts/ocs-edanverse/jennie/">Jennie's</a>, <a href="https://www.pinterest.com/friedeggtarts/ocs-edanverse/arya/">Arya's</a>) and put them in semi-matching outfits.... they are chaotic High Class Spoiled Kids who like to dress up fancy and rich</li>
+            <li><i class="fas fa-minus mr-2"></i> Lowkey their relationship is more like... close childhood friends who grew up together and were both like.. why not? This will make me richer.</li>
+            <li><i class="fas fa-minus mr-2"></i> They aren't exactly the fluffiest couple, but they are the definition of marry your best friend</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/ten" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814197?1608328475">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/arya" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814187?1608328468">
+              </a>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> They're cousins! Ten's older by three years and they're very close, grew up together, basically siblings :]</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/cael" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796575?1608328185">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/adhafera" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/4241786?1617725316">
+              </a>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> They will judge you together...</li>
+            <li><i class="fas fa-minus mr-2"></i> Tall, quiet, judging you from afas lesbian and small, angry, mean lesbian :)</li>
+            <li><i class="fas fa-minus mr-2"></i> Literally got together because they were judging people together and were like no one else hates other people like you do &lt;3</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/thia" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5851288?1616731042">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/crys" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5851286?1616730951">
+              </a>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> <a href="/characters/edanverse/thia/10612905.character-memes/43907117">Crythia</a> my beloved....</li>
+            <li><i class="fas fa-minus mr-2"></i> The purest, most drama-free relationship!!!</li>
+            <li><i class="fas fa-minus mr-2"></i> Plant wives... they own a cottage and garden together :)</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/thia" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5851288?1616731042">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/alek" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5827284?1616646931">
+              </a>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> Siblings!!! Thia's the older one by two years</li>
+            <li><i class="fas fa-minus mr-2"></i> Alek visits Thia and Crys' cabin a lot</li>
+            <li><i class="fas fa-minus mr-2"></i> Growing up, it was just the two of them :') (sidenote: baby pictures???)</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/rin" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796015?1608327477">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/jennie" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814192?1608328255">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/arya" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814187?1608328468">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/ten" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5814197?1608328475">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> Diyu kids that grew up together</li>
+            <li><i class="fas fa-minus mr-2"></i> At the time, Ten babysat them for a few years and sorta kept being the babysitter figure even when they grew older. Rin and Arya had a will-they-won't-they thing going on for a while before Rin left. The three were inseprable.</li>
+            <li><i class="fas fa-minus mr-2"></i> Ten leaves to go to Edan when they're all around high school age, the other three stay friends during that time</li>
+            <li><i class="fas fa-minus mr-2"></i> Currently, Rin and Jennie are not on good terms, Rin and Arya are still friends</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/cael" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796575?1608328185">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/alek" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5827284?1616646931">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/thia" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5851288?1616731042">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> Edan kids that grew up together</li>
+            <li><i class="fas fa-minus mr-2"></i> They used to all braid their hair together!!!</li>
+            <li><i class="fas fa-minus mr-2"></i> Cael was the prodigy child, so Alek and Thia were her only friends in school.</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/rin" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796015?1608327477">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/cael" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5796575?1608328185">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/edanverse/alek" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5827284?1616646931">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> Rin's first friends after being banished to Edan :)!</li>
+            <li><i class="fas fa-minus mr-2"></i> Rin had a crush on Cael for a while.</li>
+            <li><i class="fas fa-minus mr-2"></i> Alek served as Rin's mentor and gave her lots of advice.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="collapse" id="JUPITER" data-parent="#PARENT">
+        <div class="card rounded-0 p-2">
+          <h1 class="text-center display-4 text-uppercase text-taupe" style="font-size: 24px;">Jupiter's Moons Wishlist</h1>
+          <hr class="w-100 mt-1 mb-2">
+          <h1 class="text-center display-4 font-italic" style="font-size: 18px;">Single Character</h1>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/io" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5829139?1618171855">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/callisto" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5829144?1618171864">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/ganymede" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5829147?1618171837">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/europa" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/10671672?1618172146">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> looking for more anime-styled artwork for this group</li>
+            <li><i class="fas fa-minus mr-2"></i> looking for chibi art</li>
+            <li><i class="fas fa-minus mr-2"></i> looking for styles similar to various mahou shoujo shows over the past few years, I tend to favor modern anime styles</li>
+            <li><i class="fas fa-minus mr-2"></i> most updated reference information is all in my <a href="https://docs.google.com/document/d/1HhGmpbj1Gjp5AtcPRcnaCYu6nuuMwV7tz-_jY5k7S7g/edit#">commissioner's reference doc</a></li>
+          </ul>
+          <hr class="w-100 mt-1 mb-2">
+          <h1 class="text-center display-4 font-italic" style="font-size: 18px;">Relationships</h1>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/io" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5829139?1618171855">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/callisto" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5829144?1618171864">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/ganymede" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5829147?1618171837">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> the original core Jupiter's Moons team!</li>
+            <li><i class="fas fa-minus mr-2"></i> they are the main triad of the story and the story focuses on their friendship :)!!!</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/io" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/5829139?1618171855">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/jupiters%20moons/europa" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/10671672?1618172146">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> I won't even lie... this is basically my way of ripping off MadoHomu and giving them a happy ending</li>
+            <li><i class="fas fa-minus mr-2"></i> Their ship name is <a href="/characters/jupiters%20moons/io/43907137">Moonstruck</a></li>
+            <li><i class="fas fa-minus mr-2"></i> Lots of angst... lots of mutual pining... yes......</li>
+            <li><i class="fas fa-minus mr-2"></i> Would DIE if you did a redraw of a MadoHomu scene but with them...</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="collapse" id="QUIET" data-parent="#PARENT">
+        <div class="card rounded-0 p-2">
+          <h1 class="text-center display-4 text-uppercase text-taupe" style="font-size: 24px;">Quiet Towns Wishlist</h1>
+          <hr class="w-100 mt-1 mb-2">
+          <h1 class="text-center display-4 font-italic" style="font-size: 18px;">Single Character</h1>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/caroline" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104782?1616897066">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/eden" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6082065?1616897076">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/maddie" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6082073?1616897086">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/angeline" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104789?1616897116">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/dominic" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104786?1616897097">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> tbh, this entire story is not a big priority for me</li>
+            <li><i class="fas fa-minus mr-2"></i> looking for non-anime, kinda cartoon-y and flat shaded styles, sorta paper-y?</li>
+          </ul>
+          <hr class="w-100 mt-1 mb-2">
+          <h1 class="text-center display-4 font-italic" style="font-size: 18px;">Relationships</h1>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/eden" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6082065?1616897076">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/maddie" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6082073?1616897086">
+              </a>
+            </div>
+            <div class="col d-none d-md-block" style="max-width: 5px; border-left: 1px solid; border-right: 1px solid; opacity: 0.3;"></div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/eden" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/10812907?1619125113">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/maddie" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/10812901?1619125142">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> The only story I still care about from this world tbh</li>
+            <li><i class="fas fa-minus mr-2"></i> They're reincarnated lovers... reincarnated many, many, many times.... but never remember.... always star crossed too....</li>
+            <li><i class="fas fa-minus mr-2"></i> Current ship name is <a href="/characters/quiet%20towns/eden/43907162">Timecrossed</a></li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/caroline" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104782?1616897066">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/dominic" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104786?1616897097">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> Divorced couple with lots of angst and leftover feelings</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/caroline" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104782?1616897066">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/angeline" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104789?1616897116">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> College friends with a lowkey codependent relationship</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/caroline" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104782?1616897066">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/eden" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6082065?1616897076">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> Cousins! Caroline is older by 6 years</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/caroline" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104782?1616897066">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/dominic" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104786?1616897097">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/tara" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6104792?1616897108">
+              </a>
+            </div>
+            <!--- end chars --->
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> The (ex-)married couple and their neighbor</li>
+            <li><i class="fas fa-minus mr-2"></i> The three of them like to drink wine together and act sophisticated</li>
+          </ul>
+          <div class="row no-gutters justify-content-center">
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/eden" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6082065?1616897076">
+              </a>
+            </div>
+            <!--- char --->
+            <div class="col-lg-2 col-md-3 col-6 p-1">
+              <a href="/characters/quiet%20towns/ronan" class="img-thumbnail rounded-0 bg-eggshell">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/6082082?1616897126">
+              </a>
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-minus mr-2"></i> Technically exes but no one cares</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
