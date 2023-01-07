@@ -5,6 +5,7 @@
 $main-bg: #1c1c1c;
 $borders: #242424;
 $main-text: #f2f1f3;
+$muted-text: #aaa9ac;
 
 $accent: #a497bf;
 
@@ -77,7 +78,7 @@ hr {
 }
 
 .text-muted {
-  color: darken($main-text, 10%);
+  color: $muted-text !important;
 }
 
 .btn {
@@ -103,6 +104,7 @@ hr {
 
 #theme-toggle {
   position: fixed;
+  z-index: 999;
   top: 0;
   right: 0;
 
@@ -125,6 +127,9 @@ hr {
 }
 
 #main {
+  @media screen and (max-width: 776px) {
+    padding: 1rem;
+  }
 
   #content {
     @media screen and (min-width: 776px) {
