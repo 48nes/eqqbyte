@@ -154,3 +154,13 @@ hr {
     }
   }
 }
+
+.collapse {
+  transition: none !important;
+}
+
+@media screen and (min-width: 776px) {
+  .double-list {
+    column-count: 2;
+  }
+}
