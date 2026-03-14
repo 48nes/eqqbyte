@@ -9,7 +9,7 @@ const html = `<!DOCTYPE html>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <style>
-   body { font-family: "Raleway", sans-serif; background: #151515; color: #faf8ff; }
+   body { font-family: "Raleway", sans-serif; background: #151515; color: #faf8ff; margin: 0; }
    .container { width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
    h1 { margin-top: 0.25rem; margin-bottom: 3rem; font-size: 4rem; }
    h5 { margin: 0; font-size: 2rem; }
