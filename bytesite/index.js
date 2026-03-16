@@ -22,6 +22,10 @@ const html = `<!DOCTYPE html>
    .portfolio-card:hover { border-color: #aaa9ac; z-index: 9; }
    .portfolio-card:hover .description { color: #aaa9ac; }
 
+   @media screen and (max-width: 768px) {
+   h1 { font-size: 3rem; }
+   }
+
    @keyframes nameswitch {
      0% { content: "8"; color: #8685ef; } 50% { content: "eqq"; color: #beaee8; } 100% { content: "egg"; color: #e7c7f5; }
    }
